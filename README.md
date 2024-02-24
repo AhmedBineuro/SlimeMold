@@ -1,5 +1,5 @@
 # Slime Mold Simulation
-- This Simulation is aimed to replicate the behaviour of _Physarum polycephalum_ slime molds.
+- This Simulation is aimed to replicate the behaviour of the _Physarum polycephalum_ slime molds.
 ![Slime Mold Simulation Demo](Slime_Mold_Python.gif)
 
 ## How it works
