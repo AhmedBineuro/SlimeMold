@@ -4,7 +4,10 @@
 
 ## How it works
 
-- The simulation is composed of two 2D grid of cells. The first layer holds the agents which will represent the slime mold cells *_(Not pictured in the demo)_*. The second layer *_(called the chemical layer)_* holds the "pheromones" that the cells emit as they move around. 
+- The simulation is composed of two 2D grid of cells. The first layer holds the agents which will represent the slime mold cells *_(Not pictured in the demo)_*. The second layer *_(called the chemical layer)_* holds the "pheromones" that the cells emit as they move around.
+- The chemical grid performs 2 operations at the begining of every step of the operation, diffusion and evaporation
+  - **Diffusion**: the pheromones spread to neighboring areas
+  - **Evaporaiton**: the pheromones in the entire grid decrease by some evaporation factor 
 - Every step of the simulation, the agents will decide where to go based off of 3 regions used to estimate the pheromone frequency in the areas. The regions have a radius of $r$ and are located $d$ units away and are spread by angle $\Theta$. When the agent decides which direction they're heading towards, there is a chance that they might over or under steer. This randmoness is used to encourage exploration and discourage too much cohesion.
 
 ![Agent Diagram](Agent.png)
